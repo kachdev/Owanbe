@@ -1,0 +1,171 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: antiquewhite;
+  background-color: black;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: #838383;
+  font-style: normal;
+  overflow-x: hidden;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+@font-face{
+  font-family: 'myfont';
+  src: url('../fonts/PermanentMarker-Regular.ttf');
+}
+
+.height-700 {
+  height: 700px !important;
+}
+.section_padding_100 {
+  padding: 100px 0;
+}
+.height-800 {
+  height: 800px !important;
+}
+.bg-img {
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+.background-overlay {
+  position: relative;
+  z-index: 2;
+  background-position: center center;
+  background-size: cover;
+}
+
+.background-overlay:before{
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+
+.background-overlay:before {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.intro {
+  width: 100%;
+  height: 1000px;
+  text-align: center;
+  color: white;
+}
+
+.welcome_slide_text {
+  position: relative;
+  z-index: 1;
+}
+.welcome_slide_text h1{
+  margin-top: 4rem;
+  margin-bottom:  3rem;
+  line-height: 40px;
+  font-family: 'myfont';
+  font-size: 100px;
+}
+
+.welcome_slide_text h3{
+  line-height: 40px;
+
+}
+.welcome_slides.owl-carousel .owl-dots {
+  position: absolute;
+  top: 50%;
+  /* left: 1%; */
+  z-index: 5;
+  width: 30px;
+  background-color: transparent;
+  height: auto;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.welcome_slides.owl-carousel .owl-dot {
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: block;
+  height: 9px;
+  margin: 15px 10px;
+  width: 9px;
+}
+
+.welcome_slides.owl-carousel .owl-dot.active {
+  background-color: #ff084e;
+  border-color: #ff084e;
+}
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 40%;
+}
+.welcome-img{
+
+}
+
+.welcome-img img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 33px 60px 86px rgba(8, 10, 11, 0.15);
+  border: 5px solid #ccc;
+  margin: auto;
+}
+
+.row-new{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -80px;
+  margin-left: -80px;
+}
+
+.welcome-img-text p{
+  margin-bottom: 3rem;
+}
+
+hr{
+  border:1px solid #ccc;
+}
+.bottom-text{
+  text-align: center;
+}
+
+.bottom-text p{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+marquee{
+  padding: 7px;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+@media (min-width: 768px) {
+  .intro {
+    height: 100%;
+    padding: 0;
+  }
+  .intro .intro-body .brand-heading {
+    font-size: 40px;
+  }
+  .intro .intro-body .intro-text {
+    font-size: 26px;
+  }
+}
